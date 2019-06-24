@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.893" height="24.407" viewBox="0 0 22.893 24.407">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#b9b9b9}.cls-3{clip-path:url(#clip-path)}.cls-4{fill:#fff}
+        </style>
+        <clipPath id="clip-path">
+            <path d="M0 0h14.678v3.629H0z" class="cls-1"/>
+        </clipPath>
+    </defs>
+    <g id="message">
+        <g id="Message-2" data-name="Message">
+            <path id="Path_9" d="M8.8 0h9.356c3.7 0 5.745 2.517 6.5 6.3a14.95 14.95 0 0 1 .232 2.771c0 5.012-2.035 9.075-6.733 9.075 0 0 1.768 6.253.928 6.253S13 18.15 13 18.15H8.8c-4.7 0-6.8-4.063-6.8-9.074 0-3.258.891-6.114 3.024-7.892A5.884 5.884 0 0 1 8.8 0z" class="cls-2" data-name="Path 9" transform="translate(-2 .004)"/>
+        </g>
+        <g id="Repeat_Grid_1" class="cls-3" data-name="Repeat Grid 1">
+            <g transform="translate(-1791.563 -87.352)">
+                <ellipse id="Ellipse_3" cx="1.643" cy="1.643" class="cls-4" data-name="Ellipse 3" rx="1.643" ry="1.643" transform="translate(1796.164 94.187)"/>
+            </g>
+            <g transform="translate(-1786.563 -87.352)">
+                <ellipse id="Ellipse_3-2" cx="1.643" cy="1.643" class="cls-4" data-name="Ellipse 3" rx="1.643" ry="1.643" transform="translate(1796.164 94.187)"/>
+            </g>
+            <g transform="translate(-1781.563 -87.352)">
+                <ellipse id="Ellipse_3-3" cx="1.643" cy="1.643" class="cls-4" data-name="Ellipse 3" rx="1.643" ry="1.643" transform="translate(1796.164 94.187)"/>
+            </g>
+        </g>
+    </g>
+</svg>
