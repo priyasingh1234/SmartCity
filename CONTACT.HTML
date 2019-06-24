@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+         img.back{
+		   
+			width:device-width;
+			height:300%;
+			}
+		
+			
+			.ho:hover{
+			color:blue;
+			}
+			
+			* {
+  box-sizing: border-box;
+}
+
+ .maj{
+  background:#474e5d;
+  
+  font-family: Helvetica, sans-serif;
+  margin:0px;
+  padding:0px;
+  max-height:auto;
+  max-width:auto;
+  
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  right: 50%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+ 
+}
+.content:hover{
+ transform:translate(10px,5px);
+ }
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="animate/animate.css">
+    <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>contact us!</title>
+</head>
+
+<body> 
+    <div id="rem">
+    <header style="background-color:#ffffff">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 mt-2 col-sm-12 col-12">
+                    
+                        <img src="logo.png" >
+                    
+                <!-- </div>
+                <div class="col-md-7 col-xs-11 col-11 mt-4"> -->
+               
+                </div>
+                <div class="col-md-4 col-xs-12 col-12">
+                    <div class="row">
+                        <div class="col-9 mt-4">
+                            <div class="form-group has-search">
+                                <!-- <i class="fa fa-search form-control-feedback"></i> -->
+                                <input type="text" class="form-control" placeholder="Search keyword" name="">
+                            </div>
+                       </div>
+                       <div class="col-3 mt-4"><img src="images/message.svg"> 
+                        &nbsp; <img src="images/bell.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+       <nav class="navbar navbar-expand-lg justify-content-end navbar-dark sticky-top" style="font-size:16px;color:white;background-color:rgb(44,62,80);font-weight:630;" >
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation" onclick="removeShow()" >
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="showButt" id="collapsibleNavbar" >
+                        <!--Custom js to remove show-->
+ 
+                        <script>
+                                let removeShow = ()=>setTimeout(async ()=>{
+                                    let el =await document.getElementById('showButt')
+                                    await el.classList.toggle('show')
+                                },300)
+                            </script>
+                    <ul class="navbar-nav" style="float:right;" >
+                        <!-- <li class="nav-item active ">
+                            <a href="#" class="nav-link ">HOME</a>
+                        </li> -->
+                        <li class="nav-item pr-2" onmouseover="addActiveClass()">
+                            <a class="nav-link active" href="index.html"   aria-haspopup="true" aria-expanded="false">HOME 
+                            </a>
+                        </li>                    
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SMART CITY
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="what.html">What is smart city</a></li>
+                              <li><a class="dropdown-item" href="mission.html">Smart city mission</a></li>
+                              <li><a class="dropdown-item" href="profile.html">City profile</a></li>
+                              <li><a class="dropdown-item" href="goal.html">City vision and goals</a></li>
+                              <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+                            </ul>
+                        </li> 
+                        <li  class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown">PROJECTS
+                            </a>
+							 <ul class="dropdown-menu">
+                            <li class="dropdown nav-item">
+                              <a class="nav-link" href=""  style="width:230px;color:black;" data-toggle="dropdown">Area based development project</a>
+                              <ul class="dropdown-menu" style="position:relative;">
+                              
+                              <li><a class="dropdown-item" href="gatisheel_project.html">Operation Gatisheel Patna: Seamless Mobility</a></li>
+                              <li><a class="dropdown-item" href="janShetra.html">Operation Jan-Kshetra: Environmental Sustainability & Public Place-making</a></li>
+                              <li><a class="dropdown-item" href="SamagraVikas.html">Operation Samagra Vikas: Inclusive endeavor</a></li>
+                              <li><a class="dropdown-item" href="aadharBhoot.html">Operation Aadhar Bhoot: Core & Resilient Infra</a></li>
+                              <li><a class="dropdown-item" href="Visankulan.html">Operation Visankulan-Decongestions</a></li>
+                              <li><a class="dropdown-item" href="Vaishvik.html">Operation Vaishvik: Enhancement of Economic & Financial Base (Glo-Cal)</a></li>
+                            </ul>
+                            </li>
+                               <li class="dropdown nav-item">
+                          
+                            <a class="nav-link" href=""   style="color:black;"    data-toggle="dropdown">pan city project</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">ICCC Data Center</a></li>
+                              <li><a class="dropdown-item" href="#">Public Wi Fi Hotspots</a></li>
+                              <li><a class="dropdown-item" href="#">ITMS</a></li>
+                              <li><a class="dropdown-item" href="#">Public Transports</a></li>
+                              <li><a class="dropdown-item" href="#">Jan Seva Kendra</a></li>
+							   <li><a class="dropdown-item" href="#">Intelligent Solid Waste Management</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown">OFFICE COMMUNICATIONS
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="orders.html">Office Orders</a></li>
+                              <li><a class="dropdown-item" href="notices.html">Notices</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">TENDER
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="open_tenders.html">Tenders Open</a></li>
+                              <li><a class="dropdown-item" href="comp_tenders.html">Tenders Closed</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">MEDIA
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="gallery_new.html">Photo Gallery</a></li>
+                              <li><a class="dropdown-item" href="VideoGallery.html">Video Gallery</a></li>
+                            </ul>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link pr-2" data-toggle="dropdown">ABOUT US</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="about.html">Patna smart City Limited</a></li>
+                              <li><a class="dropdown-item" href="board.html">Board of Directors</a></li>
+                              <li><a class="dropdown-item" href="team.html">Team PSCL</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">CONTACT US</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                              <li><a class="dropdown-item" href="rti.html">RTI</a></li>
+                              <li><a class="dropdown-item" href="form.html">Grievance Registration</a></li>
+    
+                            </ul>
+                        </li>               
+                    </ul>
+                </div>
+            </nav><br>
+    </header>
+ 
+	<div>
+     <img  class="back" src="images/conmain.jpg"  height="100%" width="100%">
+	 </div>
+	 <br>
+	 <br>
+	 <hr>
+	<!-- <main  style="background-image: linear-gradient(-30deg, rgb(79, 172, 206) 0%, #f4f4f4 50%, #F0F8FF 100%)>-->
+	<h1 style="font-family: 'PT Serif', serif;text-align:center;color:darkorange;font-weight:bold;">CONTACT US!<br>━━━━━━━━━▲━━━━━━━━━</h1><br>
+	<div class="maj">
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2 style="text-align:center;font-weight:bold;">Address</h2>
+      <p style="font-size:16px;"><i class='fas fa-address-book' style='font-size:42px'></i><br>
+	  <Address>&nbsp;&nbsp;2nd floor , Block - C<br>
+
+Mauryalok Complex,<br>
+
+Budha Marg<br>
+
+Patna - 800001<br>
+ </address></p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2  style="text-align:center;font-weight:bold;">Help center</h2>
+      <p style="font-size:16px;"><i class='fas fa-question-circle' style='font-size:42px'></i><br><br>
+	  
+&nbsp;&nbsp;&nbsp;&nbsp;Patna Smart City Limited (PSCL) And Urban Development & Housing Department, Government of Bihar<br>
+
+0612 - 2200634<br>
+patnasmartcity.pscl@gmail.com<br>
+pscl-bih@gov.in.<br></p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2  style="text-align:center;font-weight:bold;">Directions</h2>
+      <p style="font-size:22px;"><i class='fas fa-map-marked-alt' style='font-size:42px'></i><br>
+	  <center>
+	  
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.86443894455!2d85.13281591543684!3d25.60942048370619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5843b78d4cbd%3A0x5f245b44cd8be584!2sThe+Patna+Municipal+Corporation!5e0!3m2!1sen!2sin!4v1548229258058" frameborder="0" style="border: 0; position: relative; width:100%; height:100px;" allowfullscreen></iframe>
+	  </center>
+                       
+	  </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2  style="text-align:center;font-weight:bold;">Need Help?</h2>
+      <p style="font-size:24px;"><i class='fas fa-phone' style='font-size:42px'></i><br>
+	  
+<center  class="ho" style="font-size:22px;">0612 - 2200634</center></p>
+    </div>
+  </div>
+  
+</div>
+</div>
+<br>
+<footer style="background-image:url(images/smartcity.jpeg);height:100px;">
+        <p class="text-center pt-3" style="color: white;padding-top:20px;">&copy Smart City Patna. All Rights Reserved </p>
+    </footer>
+</body>
+</html>

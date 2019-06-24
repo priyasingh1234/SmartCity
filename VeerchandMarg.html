@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+        
+			/* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+		body{
+overflow-x:hidden;
+}
+		
+			* {
+  box-sizing: border-box;
+}
+
+.card:hover{
+  box-shadow: inset 10px 10px 33px -4px rgba(0,0,0,0.75);
+   }
+   
+   @media only screen and (max-width:500px)
+   {
+   div.list-group{
+   display:none;
+   }
+   }
+   
+   /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+ @media only screen and (max-width:500px)
+   {
+   .cd-image-container{
+   width:400px;
+   height:auto;
+   }
+   }
+   
+  @media only screen and (max-width:500px)
+   { 
+   div.carousel{
+   width:100%;
+   }}
+ 
+</style>
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="animate/animate.css">
+    <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style_quint.css"> 
+	<script src="js/modernizr.js"></script> 
+  
+ 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Veerchand</title>
+</head>
+
+<body> 
+    <div id="rem">
+    <header style="background-color:#ffffff">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 mt-2 col-sm-12 col-12">
+                    
+                        <img src="logo.png" >
+                    
+                <!-- </div>
+                <div class="col-md-7 col-xs-11 col-11 mt-4"> -->
+               
+                </div>
+                <div class="col-md-4 col-xs-12 col-12">
+                    <div class="row">
+                        <div class="col-9 mt-4">
+                            <div class="form-group has-search">
+                                <!-- <i class="fa fa-search form-control-feedback"></i> -->
+                                <input type="text" class="form-control" placeholder="Search keyword" name="">
+                            </div>
+                       </div>
+                       <div class="col-3 mt-4"><img src="images/message.svg"> 
+                        &nbsp; <img src="images/bell.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <nav class="navbar navbar-expand-lg justify-content-end navbar-dark sticky-top" style="font-size:16px;color:white;background-color:rgb(44,62,80);font-weight:630;" >
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation" onclick="removeShow()" >
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="showButt" id="collapsibleNavbar" >
+                        <!--Custom js to remove show-->
+ 
+                        <script>
+                                let removeShow = ()=>setTimeout(async ()=>{
+                                    let el =await document.getElementById('showButt')
+                                    await el.classList.toggle('show')
+                                },300)
+                            </script>
+                    <ul class="navbar-nav" style="float:right;" >
+                        <!-- <li class="nav-item active ">
+                            <a href="#" class="nav-link ">HOME</a>
+                        </li> -->
+                        <li class="nav-item pr-2" onmouseover="addActiveClass()">
+                            <a class="nav-link active" href="index.html"  aria-haspopup="true" aria-expanded="false">HOME 
+                            </a>
+                        </li>                    
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SMART CITY
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="what.html">What is Smart City</a></li>
+                              <li><a class="dropdown-item" href="mission.html">Smart City Mission</a></li>
+                              <li><a class="dropdown-item" href="profile.html">City Profile</a></li>
+                              <li><a class="dropdown-item" href="goal.html">City Vision and Goals</a></li>
+                              <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+                            </ul>
+                        </li> 
+                        <li  class="dropdown nav-item">
+                            <a class="nav-link pr-2 active" href=""   data-toggle="dropdown">PROJECTS
+                            </a>
+							 <ul class="dropdown-menu">
+                            <li class="dropdown nav-item">
+                              <a class="nav-link" href="area_project.html"  style="width:230px;color:black;" data-toggle="dropdown">Area Based Development Project</a>
+                              <ul class="dropdown-menu" style="position:relative;">
+                              
+                              <li><a class="dropdown-item" href="gatisheel_project.html">Operation Gatisheel Patna: Seamless Mobility</a></li>
+                              <li><a class="dropdown-item" href="janShetra.html">Operation Jan-Kshetra: Environmental Sustainability & Public Place-making</a></li>
+                              <li><a class="dropdown-item" href="SamagraVikas.html">Operation Samagra Vikas: Inclusive Endeavor</a></li>
+                              <li><a class="dropdown-item" href="aadharBhoot.html">Operation Aadhar Bhoot: Core & Resilient Infra</a></li>
+                              <li><a class="dropdown-item" href="Visankulan.html">Operation Visankulan-Decongestions</a></li>
+                              <li><a class="dropdown-item" href="Vaishvik.html">Operation Vaishvik: Enhancement of Economic & Financial Base (Glo-Cal)</a></li>
+                            </ul> 
+                            </li>
+                               <li class="dropdown nav-item">
+                          
+                            <a class="nav-link" href=""   style="color:black;"    data-toggle="dropdown">Pan City Project</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">ICCC Data Center</a></li>
+                              <li><a class="dropdown-item" href="#">Public Wi Fi Hotspots</a></li>
+                              <li><a class="dropdown-item" href="#">ITMS</a></li>
+                              <li><a class="dropdown-item" href="#">Public Transports</a></li>
+                              <li><a class="dropdown-item" href="#">Jan Seva Kendra</a></li>
+							   <li><a class="dropdown-item" href="#">Intelligent Solid Waste Management</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown">OFFICE COMMUNICATIONS
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="orders.html">Office Orders</a></li>
+                              <li><a class="dropdown-item" href="notices.html">Notices</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">TENDER
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="open_tenders.html">Tenders Open</a></li>
+                              <li><a class="dropdown-item" href="comp_tenders.html">Tenders Closed</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">MEDIA
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="gallery_new.html">Photo Gallery</a></li>
+                              <li><a class="dropdown-item" href="#">Video Gallery</a></li>
+                            </ul>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link pr-2" data-toggle="dropdown">ABOUT US</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="about.html">Patna Smart City Limited</a></li>
+                              <li><a class="dropdown-item" href="board.html">Board of Directors</a></li>
+                              <li><a class="dropdown-item" href="team.html">Team PSCL</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">CONTACT US</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                              <li><a class="dropdown-item" href="rti.html">RTI</a></li>
+                              <li><a class="dropdown-item" href="form.html">Grievance Registration</a></li>
+    
+                            </ul>
+                        </li>               
+                    </ul>
+                </div>
+            </nav><br>
+    </header>
+	 
+	 <hr>
+	  <div class="container-fluid">
+         <div class="row">
+             <div class="col-md-12">
+	
+	
+	<h1 style="font-family: High Tower Text;text-align:center;color:darkorange;font-weight:bold;">Rejuvenation of Veerchand Patel Marg<br></h1><center style="text-align:center;color:darkorange;font-weight:bold;">━━━━━━━━━▲━━━━━━━━━</center>
+	
+	
+	 <div style="background-image: linear-gradient(to bottom right,ROYALBLUE,white, LIGHTSKYBLUE,white,lightblue);padding:50px;">
+	
+	
+<div class="container-fluid">
+
+
+<div class="row">
+  <ul class="list-group col-12 col-md-3 justify-content-start">
+    <li class="list-group-item list-group-item-success"><b>Area Based Project<hr></b></li>
+    <li class="list-group-item list-group-item-secondary">Operation Gatisheel Patna: Seamless Mobility</li>
+    <li class="list-group-item list-group-item-info">Operation Jan-Kshetra: Environmental Sustainability & Public Place-making</li>
+    <li class="list-group-item list-group-item-warning">Operation Samagra Vikas: Inclusive Endeavor</li>
+    <li class="list-group-item list-group-item-danger">Operation Aadhar Bhoot: Core & Resilient Infra</li>
+    <li class="list-group-item list-group-item-primary">Operation Visankulan-Decongestions</li>
+    <li class="list-group-item list-group-item-dark">Operation Vaishvik: Enhancement of Economic & Financial Base (Glo-Cal)</li>
+    <li class="list-group-item list-group-item-success"><b>Pan City Project<hr></b></li>
+	<li class="list-group-item list-group-item-dark">ICCC Data Center</li>
+    <li class="list-group-item list-group-item-warning">Public Wi Fi Hotspots</li>
+    <li class="list-group-item list-group-item-info">ITMS</li>
+    <li class="list-group-item list-group-item-secondary">Public Transports</li>
+    <li class="list-group-item list-group-item-danger">Jan Seva Kendra</li>
+    <li class="list-group-item list-group-item-primary">Intelligent Solid Waste Management</li>
+    
+  </ul>
+
+<div style="background-color:white;height:auto;" class="justify-content-start col-12 col-md-9">
+
+<figure class="cd-image-container my-3 ">
+		<img src="images/Picture2.jpg" alt="Original Image">
+		<span class="cd-image-label" data-type="original"></span>
+
+		<div class="cd-resize-img"> 
+			<img src="images/veerBefore.jpg" alt="Modified Image">
+			<span class="cd-image-label" data-type="modified"></span>
+		</div>
+
+		<span class="cd-handle"></span>
+	</figure> 
+<br><br>
+<p style="font-family: 'PT Serif', serif;text-align:justify;font-size:12pt;justify">Veerchand Patel Marg is a major arterial road of Patna city located in the ABD area of Patna Smart City. It is 1.25 km. long from Income Tax Circle and R-Block Circle. It is connected by Bailey Road and Dak Bungalow Road on north and Serpentine Road and Harding Road in south. Under Patna Smart City Mission this road will be redeveloped as model<br></p>
+
+
+
+<p style="font-family: 'PT Serif', serif;text-align:justify;font-size:12pt;justify">The design of Veerchand Patel Marg is done in two sections
+
+(i) From Income Tax Circle to Patna Club (Length – 750 meters) and
+
+(ii) From Patna Club to R-Block Circle (Length – 500 meters).
+
+( A flyover is under construction at R-Block Circle whose one arm extends on the Veerchand Patel Marg up to length of 500 meters from R-block Circle to Patna Club. The designing is done in two parts due to that.)</p>
+
+
+</div>
+
+</div>
+</div>
+<br>
+<br>
+
+<div class="container-fluid col-md-12 justify-content-start">
+<h1><center><strong>The Makeover</strong></center></h1>
+ <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/Veerchand patel road/Picture3.jpg" alt="---" >
+      <div class="carousel-caption">
+        <h3>Greenery All Around</h3>
+        
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/Veerchand patel road/Picture4.jpg" alt="---" >
+      <div class="carousel-caption">
+        <h3>Better Navigation</h3>
+       
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/Veerchand patel road/Picture5.jpg" alt="---" >
+      <div class="carousel-caption">
+        <h3>Better Service </h3>
+       
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+<div class="card-group">
+  <div class="card  animated rotateInUpLeft delay-4s" style="background-color:#FDD835  ;" >
+    <div class="card-body text-justify">
+      <p class="card-text"><strong>Non-motorized Vehicles (NMV) Lane:</strong>&nbsp; A dedicated lane for Non-motorized Vehicles like Cycles and Cycle Rickshaws have been provided as there is a need for the same which was derived from the traffic count and surveys.</p>
+    </div>
+  </div>
+  
+  <div class="card" style="background-color:#FDD835  ;">
+    <div class="card-body text-justify">
+      <p class="card-text"> <strong>Buffer:</strong>&nbsp; Existing trees has been retained and in addition to that, extra landscaping has been proposed to enhance the streetscape and beautification.</p>
+    </div>
+  </div>
+  
+  <div class="card " style="background-color:#FDD835  ;">
+    <div class="card-body text-justify">
+      <p class="card-text"><strong>  Footpath:</strong> &nbsp;Existing drain under the footpath has been considered for reconstruction.</p>
+    </div>
+  </div>
+  
+  <div class="card animated rotateInUpRight delay-4s"  style="background-color:#FDD835  ;">
+    <div class="card-body text-justify">
+      <p class="card-text"><strong> Service road:</strong> &nbsp;It is meant to be used for accessing properties and parking.</p>
+    </div>
+  </div>
+  </div>
+  
+  <div class="card-group">
+  <div class="card  animated rotateInUpLeft delay-5s" style="background-color:#FDD835  ;">
+    <div class="card-body text-justify">
+      <p class="card-text"><strong>Utility Ducts:</strong>&nbsp; Space under service road and NMV lane is available for lying of utilities like Gas Line, Electricity Line, OFC cables etc.</p>
+    </div>
+  </div>
+  
+  <div class="card " style="background-color:#FDD835  ;">
+    <div class="card-body text-justify">
+      <p class="card-text"> <strong>Planters:</strong>&nbsp;Planters are also proposed next to the pedestrian walkway where ever possible to give a visual harmony with street lighting and sidewalk amenities and the building context.</p>
+    </div>
+  </div>
+  
+  <div class="card " style="background-color:#FDD835  ;">
+    <div class="card-body text-justify">
+      <p class="card-text"><strong>Pedestrian Refuge Island:&nbsp;</strong>A cut through should be given in the divider (protected by bollards) at pedestrian crossing to facilitate cross movement of pedestrians from one end to another.</p>
+    </div>
+  </div>
+  
+   <div class="card " style="background-color:#FDD835  ;">
+    <div class="card-body text-justify">
+      <p class="card-text"> <strong>Boundary Wall Art:</strong> &nbsp;It is proposed to paint the boundary walls of certain properties along the Veerchand Patel Marg to enhance the streetscape and aesthetics.
+</p>
+    </div>
+  </div>
+  
+   <div class="card   animated rotateInUpRight delay-5s" style="background-color:#FDD835  ;">
+    <div class="card-body text-justify">
+      <p class="card-text"><strong>Project Design and Executing Agency</strong>
+M/s Dayanand Prasad Sinha & Co. has been awarded the work order for the project. Total budget of the    project is Rs. 33.43 crore .</p>
+    </div>
+  </div>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+ </div>
+  <br>
+<br>
+
+	
+<footer style="background-image:url(images/smartcity.jpeg);height:100px;">
+        <p class="text-center pt-3" style="color: white;padding-top:22px;">&copy Smart City Patna. All Rights Reserved </p>
+    </footer>
+	<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

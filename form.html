@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+         img.back{
+		   max-width:1396px;
+			width:device-width;
+			height:410px;
+			}
+		
+		
+	</style>
+	<link rel="stylesheet" href="css/table.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="animate/animate.css">
+    <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Grievances registration!</title>
+</head>
+
+<body> 
+    <div id="rem">
+    <header style="background-color:#ffffff">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 mt-2 col-sm-12 col-12">
+                    
+                        <img src="logo.png" >
+                    
+                <!-- </div>
+                <div class="col-md-7 col-xs-11 col-11 mt-4"> -->
+               
+                </div>
+                <div class="col-md-4 col-xs-12 col-12">
+                    <div class="row">
+                        <div class="col-9 mt-4">
+                            <div class="form-group has-search">
+                                <!-- <i class="fa fa-search form-control-feedback"></i> -->
+                                <input type="text" class="form-control" placeholder="Search keyword" name="">
+                            </div>
+                       </div>
+                       <div class="col-3 mt-4"><img src="images/message.svg"> 
+                        &nbsp; <img src="images/bell.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg justify-content-end navbar-dark sticky-top" style="font-size:16px;color:white;background-color:rgb(44,62,80);font-weight:630;" >
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation" onclick="removeShow()" >
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="showButt" id="collapsibleNavbar" >
+                        <!--Custom js to remove show-->
+ 
+                        <script>
+                                let removeShow = ()=>setTimeout(async ()=>{
+                                    let el =await document.getElementById('showButt')
+                                    await el.classList.toggle('show')
+                                },300)
+                            </script>
+                    <ul class="navbar-nav" style="float:right;" >
+                        <!-- <li class="nav-item active ">
+                            <a href="#" class="nav-link ">HOME</a>
+                        </li> -->
+                        <li class="nav-item pr-2" onmouseover="addActiveClass()">
+                            <a class="nav-link active" href="index.html"   aria-haspopup="true" aria-expanded="false">HOME 
+                            </a>
+                        </li>                    
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SMART CITY
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="what.html">What is Smart City</a></li>
+                              <li><a class="dropdown-item" href="mission.html">Smart City Mission</a></li>
+                              <li><a class="dropdown-item" href="profile.html">City Profile</a></li>
+                              <li><a class="dropdown-item" href="goal.html">City Vision and Goals</a></li>
+                              <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+                            </ul>
+                        </li> 
+                        <li  class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown">PROJECTS
+                            </a>
+							 <ul class="dropdown-menu">
+                            <li class="dropdown nav-item">
+                              <a class="nav-link" href=""  style="width:230px;color:black;" data-toggle="dropdown">Area Based Development Project</a>
+                              <ul class="dropdown-menu" style="position:relative;">
+                              
+                              <li><a class="dropdown-item" href="gatisheel_project.html">Operation Gatisheel Patna: Seamless Mobility</a></li>
+                              <li><a class="dropdown-item" href="janShetra.html">Operation Jan-Kshetra: Environmental Sustainability & Public Place-making</a></li>
+                              <li><a class="dropdown-item" href="SamagraVikas.html">Operation Samagra Vikas: Inclusive Endeavor</a></li>
+                              <li><a class="dropdown-item" href="aadharBhoot.html">Operation Aadhar Bhoot: Core & Resilient Infra</a></li>
+                              <li><a class="dropdown-item" href="Visankulan.html">Operation Visankulan-Decongestions</a></li>
+                              <li><a class="dropdown-item" href="Vaishvik.html">Operation Vaishvik: Enhancement of Economic & Financial Base (Glo-Cal)</a></li>
+                            </ul> 
+                            </li>
+                               <li class="dropdown nav-item">
+                          
+                            <a class="nav-link" href=""   style="color:black;"    data-toggle="dropdown">Pan City Project</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">ICCC Data Center</a></li>
+                              <li><a class="dropdown-item" href="#">Public Wi Fi Hotspots</a></li>
+                              <li><a class="dropdown-item" href="#">ITMS</a></li>
+                              <li><a class="dropdown-item" href="#">Public Transports</a></li>
+                              <li><a class="dropdown-item" href="#">Jan Seva Kendra</a></li>
+							   <li><a class="dropdown-item" href="#">Intelligent Solid Waste Management</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown">OFFICE COMMUNICATIONS
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="orders.html">Office Orders</a></li>
+                              <li><a class="dropdown-item" href="notices.html">Notices</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">TENDER
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="open_tenders.html">Tenders Open</a></li>
+                              <li><a class="dropdown-item" href="comp_tenders.html">Tenders Closed</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">MEDIA
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="gallery_new.html">Photo Gallery</a></li>
+                              <li><a class="dropdown-item" href="#">Video Gallery</a></li>
+                            </ul>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link pr-2" data-toggle="dropdown">ABOUT US</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="about.html">Patna Smart City Limited</a></li>
+                              <li><a class="dropdown-item" href="board.html">Board of Directors</a></li>
+                              <li><a class="dropdown-item" href="team.html">Team PSCL</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">CONTACT US</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                              <li><a class="dropdown-item" href="rti.html">RTI</a></li>
+                              <li><a class="dropdown-item" href="form.html">Grievance Registration</a></li>
+    
+                            </ul>
+                        </li>               
+                    </ul>
+                </div>
+            </nav><br>
+    </header>
+	<div>
+     <img  class="back" src="images/grav.jpg"  width="100%">
+	 </div>
+	 <hr>
+	
+	<div class="container-fluid">
+         <div class="row">
+             <div class="col-md-12">
+    <h1 style="font-family: 'PT Serif', serif;text-align:center;color:darkorange;font-weight:700;margin-top:20px;">GRIEVANCES REGISTRATION<br></h1>
+    <center style="color:darkorange">━━━━━━━━━▲━━━━━━━━━</center> 
+      <div  style="background-image: linear-gradient(to bottom right,ROYALBLUE,white, LIGHTSKYBLUE,white,lightblue);padding: 50px;">
+
+	 
+	 <br>
+	 <div class="container justify-content-between-center bg-light">
+<form method="post" action="./Grievance.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1" enctype="multipart/form-data" style="font-family: 'PT Serif', serif;">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTIxMzYzNTM3MzQPZBYCZg9kFgICBQ8WAh4HZW5jdHlwZQUTbXVsdGlwYXJ0L2Zvcm0tZGF0YWRkwFs6nl45Iq3nf+iSBwvaxuWZm9k=" />
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=zQoiTf-a8dSjZDmxKIl0UM41B5v0EM7-DrQgBMD5yZmynAAXItYgQNGgEx03DCllzJomGJ3lqzngFeeHhOyO7_qFb541&amp;t=636845531380000000" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=Q0ojaa8C-2NN0HD9sIGoFo0vOddQlPd_kUVBN5qUgygBP4gE9Ck-29KkUUOTTU-7hRJIVZ0jJMDuIHgkzxcdMToYOys1&amp;t=636845531380000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FE03A35F" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAfh916Lz8nvCWAYKmDQRPU76vKEfD42BmNSaynZBxI8NYwEzjAVk0qOpDQhHyuW4oA6F3ptDZSzajhOAYGmyXkCujJ65vB475NJx8WQgQT2dgb75qxryMt5cf2VuUytRRJLbv7w7MNxHBqQ1ZnoEiB6oWSnw8dIFs1AJJucD2xj20oMG2M=" />
+</div>
+    <div>
+        
+
+    <main>
+        <div id="position">
+            <div class="container ">
+                <ul>
+                    <li><a href="default.aspx">Home</a>
+                    </li>
+                    <li>Contact Us>> Grievance Registration
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="container margin_60">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <div class="form_title">
+                        <h3><strong><i class="icon-pencil"></i></strong>Fill the form below</h3>
+                        <p>
+                            Patna Smart City Limited (PSCL)
+                        </p>
+                    </div>
+                    <div class="step">
+
+                        <div id="message-contact"></div>
+                        <div id="contactform">
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>First Name<span class="mondatry">*</span></label>
+                                        <input name="ctl00$ContentPlaceHolder1$f_name" type="text" id="ContentPlaceHolder1_f_name" placeholder="First Name " class="form-control" />
+                                        <span id="ContentPlaceHolder1_RequiredFieldValidator3" style="color:Red;visibility:hidden;">First name is required!</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input name="ctl00$ContentPlaceHolder1$l_name" type="text" id="ContentPlaceHolder1_l_name" placeholder="Last Name " class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End row -->
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input name="ctl00$ContentPlaceHolder1$email_id" type="text" id="ContentPlaceHolder1_email_id" placeholder="Email ID :" class="form-control" />
+                                        <span id="ContentPlaceHolder1_regEmail" style="color:Red;visibility:hidden;"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Mobile No.<span class="mondatry">*</span></label>
+                                        <input name="ctl00$ContentPlaceHolder1$mob_no" type="text" id="ContentPlaceHolder1_mob_no" placeholder="Mobile Number :" class="form-control" max-length="10" />
+                                        <span id="ContentPlaceHolder1_RequiredFieldValidator6" style="color:Red;visibility:hidden;">Mobile number is required!</span>
+                                        <span id="ContentPlaceHolder1_RegularExpressionValidator2" style="color:Red;visibility:hidden;">Enter valid mobile number!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Grievance Details<span class="mondatry">*</span></label>
+                                        <textarea name="ctl00$ContentPlaceHolder1$message" rows="5" cols="20" id="ContentPlaceHolder1_message" placeholder="Write Your Grievance " class="form-control">
+</textarea>
+                                        <span id="ContentPlaceHolder1_RequiredFieldValidator1" style="color:Red;visibility:hidden;">Message is required!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Upload File (If any)</label>
+                                        <input type="file" name="ctl00$ContentPlaceHolder1$FileUpload1" id="ContentPlaceHolder1_FileUpload1" />
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$submit" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$submit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_submit" class="btn form-control" style="color:White;background-color:#1CBBB4;font-size:Medium;font-weight:bold;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End col-md-8 -->
+
+                
+            </div>
+
+        </div>
+        
+
+        
+    </main>
+
+        
+    </div>
+        
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder1_RequiredFieldValidator3"), document.getElementById("ContentPlaceHolder1_regEmail"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator6"), document.getElementById("ContentPlaceHolder1_RegularExpressionValidator2"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder1_RequiredFieldValidator3 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator3"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator3");
+ContentPlaceHolder1_RequiredFieldValidator3.controltovalidate = "ContentPlaceHolder1_f_name";
+ContentPlaceHolder1_RequiredFieldValidator3.errormessage = "First name is required!";
+ContentPlaceHolder1_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_RequiredFieldValidator3.initialvalue = "";
+var ContentPlaceHolder1_regEmail = document.all ? document.all["ContentPlaceHolder1_regEmail"] : document.getElementById("ContentPlaceHolder1_regEmail");
+ContentPlaceHolder1_regEmail.controltovalidate = "ContentPlaceHolder1_email_id";
+ContentPlaceHolder1_regEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder1_regEmail.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+var ContentPlaceHolder1_RequiredFieldValidator6 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator6"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator6");
+ContentPlaceHolder1_RequiredFieldValidator6.controltovalidate = "ContentPlaceHolder1_mob_no";
+ContentPlaceHolder1_RequiredFieldValidator6.errormessage = "Mobile number is required!";
+ContentPlaceHolder1_RequiredFieldValidator6.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_RequiredFieldValidator6.initialvalue = "";
+var ContentPlaceHolder1_RegularExpressionValidator2 = document.all ? document.all["ContentPlaceHolder1_RegularExpressionValidator2"] : document.getElementById("ContentPlaceHolder1_RegularExpressionValidator2");
+ContentPlaceHolder1_RegularExpressionValidator2.controltovalidate = "ContentPlaceHolder1_mob_no";
+ContentPlaceHolder1_RegularExpressionValidator2.errormessage = "Enter valid mobile number!";
+ContentPlaceHolder1_RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder1_RegularExpressionValidator2.validationexpression = "^[01]?[- .]?(\\([2-9]\\d{2}\\)|[2-9]\\d{2})[- .]?\\d{3}[- .]?\\d{4}$";
+var ContentPlaceHolder1_RequiredFieldValidator1 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator1"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1");
+ContentPlaceHolder1_RequiredFieldValidator1.controltovalidate = "ContentPlaceHolder1_message";
+ContentPlaceHolder1_RequiredFieldValidator1.errormessage = "Message is required!";
+ContentPlaceHolder1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_RequiredFieldValidator1.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+  </div>  
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<footer style="background-image:url(images/smartcity.jpeg);height:100px;width:100%;">
+        <p class="text-center pt-3" style="color: white;padding-top:20px;">&copy Smart City Patna. All Rights Reserved </p>
+    </footer>
+</body>
+</html>

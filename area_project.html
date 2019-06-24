@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+         img.back{
+		   
+			width:device-width;
+			height:300%;
+			}
+			div.sp{
+			background-image:linear-gradient(to bottom right,ROYALBLUE,white, LIGHTSKYBLUE,white,lightblue);
+			background-size:content;
+			margin-left:60px;
+			margin-right:60px;
+			margin-top:30px;
+			margin-bottom:50px;
+			padding-left:20px;
+			padding-top:20px;
+			}
+			
+			img.bet{
+			border: 3px solid #ddd;
+  border-radius:3px;
+  padding: 5px;
+  width:35%;
+  height:300px;
+  box-shadow: 17px 21px 28px -4px rgba(48,48,51,0.71);
+  
+  }
+  
+  div.left{
+  width:52%;
+  transform:skewX(20deg);
+  height:79px;
+  padding:20px;
+  font-size:19px;
+  font-weight:bold;
+  background-color:white;
+  box-shadow: 17px 21px 28px -4px rgba(48,48,51,0.71);
+  
+  }
+  
+  
+  div.right{
+  width:50%;
+  margin-left:540px;
+  transform:skewX(-20deg);
+  height:79px;
+  padding:20px;
+  font-size:19px;
+  font-weight:bold;
+  background-color:white;
+  box-shadow: 17px 21px 28px -4px rgba(48,48,51,0.71);
+  
+  }
+  
+ 
+		
+.bet:hover{
+		transform:scale(2.2,2.5);
+		}
+			
+			* {
+  box-sizing: border-box;
+}
+
+ 
+</style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="animate/animate.css">
+    <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Area Based Projects!</title>
+</head>
+
+<body> 
+    <div id="rem">
+    <header style="background-color:#ffffff">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 mt-2 col-sm-12 col-12">
+                    
+                        <img src="logo.png" >
+                    
+                <!-- </div>
+                <div class="col-md-7 col-xs-11 col-11 mt-4"> -->
+               
+                </div>
+                <div class="col-md-4 col-xs-12 col-12">
+                    <div class="row">
+                        <div class="col-9 mt-4">
+                            <div class="form-group has-search">
+                                <!-- <i class="fa fa-search form-control-feedback"></i> -->
+                                <input type="text" class="form-control" placeholder="Search keyword" name="">
+                            </div>
+                       </div>
+                       <div class="col-3 mt-4"><img src="images/message.svg"> 
+                        &nbsp; <img src="images/bell.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg justify-content-end navbar-dark sticky-top" style="font-size:16px;color:white;background-color:rgb(44,62,80);font-weight:630;" >
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation" onclick="removeShow()" >
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="showButt" id="collapsibleNavbar" >
+                        <!--Custom js to remove show-->
+ 
+                        <script>
+                                let removeShow = ()=>setTimeout(async ()=>{
+                                    let el =await document.getElementById('showButt')
+                                    await el.classList.toggle('show')
+                                },300)
+                            </script>
+                    <ul class="navbar-nav" style="float:right;" >
+                        <!-- <li class="nav-item active ">
+                            <a href="#" class="nav-link ">HOME</a>
+                        </li> -->
+                        <li class="nav-item pr-2" onmouseover="addActiveClass()">
+                            <a class="nav-link active" href="#"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HOME 
+                            </a>
+                        </li>                    
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SMART CITY
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="what.html">What is Smart City</a></li>
+                              <li><a class="dropdown-item" href="mission.html">Smart City Mission</a></li>
+                              <li><a class="dropdown-item" href="profile.html">City Profile</a></li>
+                              <li><a class="dropdown-item" href="goal.html">City Vision and Goals</a></li>
+                              <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+                            </ul>
+                        </li> 
+                        <li  class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown">PROJECTS
+                            </a>
+							 <ul class="dropdown-menu">
+                            <li class="dropdown nav-item">
+                              <a class="nav-link" href=""  style="width:230px;color:black;" data-toggle="dropdown">Area Based Development Project</a>
+                              <ul class="dropdown-menu" style="position:relative;">
+                              
+                              <li><a class="dropdown-item" href="gatisheel_project.html">Operation Gatisheel Patna: Seamless Mobility</a></li>
+                              <li><a class="dropdown-item" href="janShetra.html">Operation Jan-Kshetra: Environmental Sustainability & Public Place-making</a></li>
+                              <li><a class="dropdown-item" href="SamagraVikas.html">Operation Samagra Vikas: Inclusive Endeavor</a></li>
+                              <li><a class="dropdown-item" href="aadharBhoot.html">Operation Aadhar Bhoot: Core & Resilient Infra</a></li>
+                              <li><a class="dropdown-item" href="Visankulan.html">Operation Visankulan-Decongestions</a></li>
+                              <li><a class="dropdown-item" href="Vaishvik.html">Operation Vaishvik: Enhancement of Economic & Financial Base (Glo-Cal)</a></li>
+                            </ul> 
+                            </li>
+                               <li class="dropdown nav-item">
+                          
+                            <a class="nav-link" href=""   style="color:black;"    data-toggle="dropdown">Pan City Project</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">ICCC Data Center</a></li>
+                              <li><a class="dropdown-item" href="#">Public Wi Fi Hotspots</a></li>
+                              <li><a class="dropdown-item" href="#">ITMS</a></li>
+                              <li><a class="dropdown-item" href="#">Public Transports</a></li>
+                              <li><a class="dropdown-item" href="#">Jan Seva Kendra</a></li>
+							   <li><a class="dropdown-item" href="#">Intelligent Solid Waste Management</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown">OFFICE COMMUNICATIONS
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="orders.html">Office Orders</a></li>
+                              <li><a class="dropdown-item" href="notices.html">Notices</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">TENDER
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="open_tenders.html">Tenders Open</a></li>
+                              <li><a class="dropdown-item" href="comp_tenders.html">Tenders Closed</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">MEDIA
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Photo Gallery</a></li>
+                              <li><a class="dropdown-item" href="#">Video Gallery</a></li>
+                            </ul>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link pr-2" data-toggle="dropdown">ABOUT US</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="about.html">Patna Smart City Limited</a></li>
+                              <li><a class="dropdown-item" href="board.html">Board of Directors</a></li>
+                              <li><a class="dropdown-item" href="team.html">Team PSCL</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">CONTACT US</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                              <li><a class="dropdown-item" href="rti.html">RTI</a></li>
+                              <li><a class="dropdown-item" href="form.html">Grievance Registration</a></li>
+    
+                            </ul>
+                        </li>               
+                    </ul>
+                </div>
+            </nav><br>
+    </header>
+	 <br>
+	 <br>
+	 <hr>
+	 <div style="margin-top:40px;width:100%,height:auto;">
+	
+	<h1 style="font-family: High Tower Text;text-align:center;color:darkorange;font-weight:bold;">AREA BASED DEVELOPMENT PROJECTS!<br>━━━━━━━━━▲━━━━━━━━━</h1>
+	</div>
+	
+	<div class="sp">
+<p style="font-family: High Tower Text;text-align:justify;font-weight:bold;font-size:20px;">Patna Smart City Mission (SCM) Plan has two major component- Area Based Development and Pan City Developments. While the former one will focus on development work in a particular area, the later one will have projects that would cover the whole city.<br>
+
+The present city recreational hub of Gandhi Maidan forms the core of the ABD area in Patna Smart City Plan . ABD area (817.35 acres) is main business hub with star rated hotels, business offices, shopping malls and retail shops with a generation of 20% GDP of the city.
+<br>
+The ABD area is having features of administrative and commercial land use where important government institutional buildings are located. It is linking two major transport nodes viz. Patna railway station and Bankipore Bus depot which are located at the two diagonal corners of the designated ABD zone. Having heritage precinct as Golghar and Patna museum adds to the importance factor of the area.<br></p>
+<center><img src="images/road_ABD.jpg" class="bet" >
+<p>Arrow at the photo to zoom it</p></center>
+
+<br>
+<h2 style="font-family: High Tower Text;text-align:justify;font-weight:bold;text-align:center;">Area Based Development Projects<h4><br>
+<p style="font-family: High Tower Text;text-align:justify;font-weight:bold;font-size:20px;">
+The overall project is divided into 7 different sub-projects namely; Operation Aadharbhoot for core and resilient infrastructure, Operation Visankulan for decongestion, Gatisheel Patna for seamless mobility, Operation Jankshetra for environmental sustainability & public place making, operation Sampoorna Nagar Vikas for pan city projects, operation Samagra Vikas for inclusive endeavour, operation Vaisvik for identity of local to global. All the identified 44 projects in different categories are grouped into above 7 sub-projects.
+</p>
+<h2 style="font-family: High Tower Text;text-align:justify;font-weight:bold;text-align:center;">All Projects List</h2><br>
+<div class="left"><a href="#">Operation Gatisheel Patna: Seamless Mobility</a></div>
+<br>
+<div class="right"><a href="#">Operation Jan-Kshetra: Environmental Sustainability & Public Place-making</a></div>
+<br>
+<div class="left"><a href="#">Operation Samagra Vikas: Inclusive endeavor</a></div>
+<br>
+<div class="right"><a href="#">Operation Aadhar Bhoot: Core & Resilient Infra</a></div>
+<br>
+<div class="left"><a href="#">Operation Vaishvik: Enhancement of Economic & Financial Base (Glo-Cal)</a></div>
+<br>
+<div class="right"><a href="#">Operation Visankulan-Decongestion</a></div>
+<br>
+  <br>
+<br>
+</div>
+	
+<footer style="background-image:url(images/smartcity.jpeg);height:100px;">
+        <p class="text-center pt-3" style="color: white;padding-top:20px;">&copy Smart City Patna. All Rights Reserved </p>
+    </footer>
+</body>
+</html>

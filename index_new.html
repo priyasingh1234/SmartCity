@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="animate/animate.css">
+    <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	
+	
+	<link href="css_cm/bootstrap.min.css" rel="stylesheet" />
+    <link href="css_cm/main_cm_website.css" rel="stylesheet" />
+    <style type="text/css">
+	   .top_margin{
+    margin-top:30px;
+    }
+
+	    #btnright
+        { 
+            position:absolute; 
+            right:0; 
+            height:92px; 
+            width:100px; 
+            background: url(menu-nav.png) 35px 28px no-repeat #1b7b98;
+            border:none;  
+	    }
+	
+	</style>
+	<style>
+
+	 
+	div.icon{
+	position:fixed;
+	z-index:9;
+	background:rgba(2,44,67,0);
+	margin-top:209px;
+	margin-left:1140px;
+	}
+	.spe{
+	border: 2px solid #000000;
+	padding:5px;
+	}
+	
+	.spe:hover{
+	transform:scale(1.5,1.5);
+	
+	}
+	@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+
+	//loading pagemain {
+  margin: 0 auto;
+  width: 200px;
+  padding-top: 100px;
+}
+
+div.content p {
+  margin-top: 50px;
+  font-family: monospace;
+  font-size: 0.99em;
+  color: #898989;
+  letter-spacing: 0.2em;
+  animation-name: loading-text;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  position: relative;
+  left: 0;
+}
+
+@keyframes loading-text {
+  0% {
+    left: 0;
+  }
+  
+  50% {
+    left: 50px;
+    opacity: 0.1;
+  }
+  
+  100% {
+    left: 0;
+  }
+}
+
+
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1.5em;
+  position: relative;
+  top: 0;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.left-circle {
+  animation-name: left-circle;
+  animation-timing-function: ease-in;
+  background: #ffac36;
+}
+
+@keyframes left-circle {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 50px;
+  }
+  60% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.middle-circle {
+  animation-name: middle-circle;
+  animation-timing-function: linear;
+  background: #fd625e;
+}
+
+@keyframes middle-circle {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 50px;
+  }
+
+  70% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.right-circle {
+  animation-name: right-circle;
+  animation-timing-function: ease-out;
+  background: #00b4ff;
+}
+
+@keyframes right-circle {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 50px;
+    transform: scale(1.2);
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+</style>
+
+ 
+    <title>Smart city Patna</title>
+</head>
+<body> 
+
+      <!-- <div id="loading" class="text-center" style="background-image: url(images/mainpg.jpg);background-repeat:no-repeat;background-size:cover;opacity:1;object-fit:fill;height:100%;width:100%;background-position: center;"> -->
+        <!-- <!-- <button  type="button" id="skipbutton" class="btn btn-info float-right" style="position:absolute; bottom:20px; right: 25px; background-color:orange; height: 50px; width: 105px; border-width:0px; border-radius: 20px;" >Skip >> </button> -->
+        <!-- <h1 style="color:orange;text-shadow:2px 3px black;font-family: Avenir; font-size:77px;font-style: normal;font-stretch: normal;line-height: 1.36;letter-spacing:4px;margin-top:170px;"><b>Welcome to</b></h1><br> -->
+        <!-- <img src="logo.png"> -->
+        <!-- <center><main> -->
+  <!-- <div class="circle left-circle"></div> -->
+  <!-- <div class="circle middle-circle"></div> -->
+  <!-- <div class=" circle right-circle"></div> -->
+  <!-- <!-- <div class="content"><p>Loading . . .</p></div> --> 
+<!-- </main></center> -->
+   
+    <!-- </div> -->
+    <div id="rem">
+    <!-- <header style="background-color:#ffffff"> -->
+        <!-- <div class="container-fluid"> -->
+            <!-- <div class="row"> -->
+                <!-- <div class="col-md-8 mt-2 col-sm-12 col-12"> -->
+                    
+                        <!-- <img src="logo.png" > -->
+                    
+                <!-- <!-- </div> -->
+                <!-- <div class="col-md-7 col-xs-11 col-11 mt-4"> --> 
+               
+                <!-- </div> -->
+                <!-- <div class="col-md-4 col-xs-12 col-12"> -->
+                    <!-- <div class="row"> -->
+                        <!-- <div class="col-9 mt-4"> -->
+                            <!-- <div class="form-group has-search"> -->
+                                <!-- <!-- <i class="fa fa-search form-control-feedback"></i> --> 
+                                <!-- <input type="text" class="form-control" placeholder="Search keyword" name=""> -->
+                            <!-- </div> -->
+                       <!-- </div> -->
+                       <!-- <div class="col-3 mt-4"><img src="images/message.svg">  -->
+                        <!-- &nbsp; <img src="images/bell.svg"> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        
+        <!-- <nav class="navbar navbar-expand-lg justify-content-end navbar-dark sticky-top" style="font-size:16px;color:white;background-color:rgb(44,62,80);font-weight:630;" > -->
+                <!-- <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation" onclick="removeShow()" > -->
+                    <!-- <span class="navbar-toggler-icon" ></span> -->
+                <!-- </button> -->
+
+                <!-- <div class="collapse navbar-collapse " id="showButt" id="collapsibleNavbar" > -->
+                        <!-- <!--Custom js to remove show--> 
+ 
+                        <!-- <script> -->
+                                <!-- let removeShow = ()=>setTimeout(async ()=>{ -->
+                                    <!-- let el =await document.getElementById('showButt') -->
+                                    <!-- await el.classList.toggle('show') -->
+                                <!-- },300) -->
+                            <!-- </script> -->
+                    <!-- <ul class="navbar-nav" style="float:right;" > -->
+                        <!-- <!-- <li class="nav-item active "> -->
+                            <!-- <a href="#" class="nav-link ">HOME</a> -->
+                        <!-- </li> --> 
+                        <!-- <li class="nav-item pr-2" onmouseover="addActiveClass()"> -->
+                            <!-- <a class="nav-link active" href="#"   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HOME  -->
+                            <!-- </a> -->
+                        <!-- </li>                     -->
+                        <!-- <li class="dropdown nav-item"> -->
+                            <!-- <a class="nav-link pr-2" href=""   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SMART CITY -->
+                            <!-- </a> -->
+                            <!-- <ul class="dropdown-menu"> -->
+                              <!-- <li><a class="dropdown-item" href="what.html">What is Smart City</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="mission.html">Smart City Mission</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="profile.html">City Profile</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="goal.html">City Vision and Goals</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="partners.html">Partners</a></li> -->
+                            <!-- </ul> -->
+                        <!-- </li>  -->
+                        <!-- <li  class="dropdown nav-item"> -->
+                            <!-- <a class="nav-link pr-2" href=""   data-toggle="dropdown">PROJECTS -->
+                            <!-- </a> -->
+							 <!-- <ul class="dropdown-menu"> -->
+                            <!-- <li class="dropdown nav-item"> -->
+                              <!-- <a class="nav-link" href="area_project.html"  style="width:230px;color:black;" data-toggle="dropdown">Area Based Development Project</a> -->
+                              <!-- <ul class="dropdown-menu" style="position:relative;"> -->
+                              
+                              <!-- <li><a class="dropdown-item" href="gatisheel_project.html">Operation Gatisheel Patna: Seamless Mobility</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="janShetra.html">Operation Jan-Kshetra: Environmental Sustainability & Public Place-making</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="SamagraVikas.html">Operation Samagra Vikas: Inclusive Endeavor</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="aadharBhoot.html">Operation Aadhar Bhoot: Core & Resilient Infra</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="Visankulan.html">Operation Visankulan-Decongestions</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="Vaishvik.html">Operation Vaishvik: Enhancement of Economic & Financial Base (Glo-Cal)</a></li> -->
+                            <!-- </ul>  -->
+                            <!-- </li> -->
+                               <!-- <li class="dropdown nav-item"> -->
+                          
+                            <!-- <a class="nav-link" href=""   style="color:black;"    data-toggle="dropdown">Pan City Project</a> -->
+                            <!-- <ul class="dropdown-menu"> -->
+                              <!-- <li><a class="dropdown-item" href="#">ICCC Data Center</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="#">Public Wi Fi Hotspots</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="#">ITMS</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="#">Public Transports</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="#">Jan Seva Kendra</a></li> -->
+							   <!-- <li><a class="dropdown-item" href="#">Intelligent Solid Waste Management</a></li> -->
+                            <!-- </ul> -->
+                          <!-- </li> -->
+                        <!-- </ul> -->
+                    <!-- </li>  -->
+                        <!-- <li class="dropdown nav-item"> -->
+                            <!-- <a class="nav-link pr-2" href=""   data-toggle="dropdown">OFFICE COMMUNICATIONS -->
+                            <!-- </a> -->
+                            <!-- <ul class="dropdown-menu"> -->
+                              <!-- <li><a class="dropdown-item" href="orders.html">Office Orders</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="notices.html">Notices</a></li> -->
+                            <!-- </ul> -->
+                        <!-- </li>  -->
+                        <!-- <li class="dropdown nav-item"> -->
+                            <!-- <a class="nav-link pr-2" href=""  data-toggle="dropdown">TENDER -->
+                            <!-- </a> -->
+                            <!-- <ul class="dropdown-menu"> -->
+                              <!-- <li><a class="dropdown-item" href="open_tenders.html">Tenders Open</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="comp_tenders.html">Tenders Closed</a></li> -->
+                            <!-- </ul> -->
+                        <!-- </li>  -->
+                        <!-- <li class="dropdown nav-item"> -->
+                            <!-- <a class="nav-link pr-2" href=""  data-toggle="dropdown">MEDIA -->
+                            <!-- </a> -->
+                            <!-- <ul class="dropdown-menu"> -->
+                              <!-- <li><a class="dropdown-item" href="gallery_new.html">Photo Gallery</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="VideoGallery.html">Video Gallery</a></li> -->
+                            <!-- </ul> -->
+                        <!-- </li>  -->
+                        <!-- <li class="nav-item dropdown"> -->
+                            <!-- <a href="#" class="nav-link pr-2" data-toggle="dropdown">ABOUT US</a> -->
+                            <!-- <ul class="dropdown-menu"> -->
+                              <!-- <li><a class="dropdown-item" href="about.html">Patna Smart City Limited</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="board.html">Board of Directors</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="team.html">Team PSCL</a></li> -->
+    
+                            <!-- </ul> -->
+                        <!-- </li> -->
+                        <!-- <li class="nav-item dropdown"> -->
+                            <!-- <a href="#" class="nav-link" data-toggle="dropdown">CONTACT US</a> -->
+                            <!-- <ul class="dropdown-menu"> -->
+                              <!-- <li><a class="dropdown-item" href="contact.html">Contact Us</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="rti.html">RTI</a></li> -->
+                              <!-- <li><a class="dropdown-item" href="form.html">Grievance Registration</a></li> -->
+    
+                            <!-- </ul> -->
+                        <!-- </li>               
+                    <!-- </ul> -->
+                <!-- </div> -->
+            <!-- </nav><br> -->
+    <!-- </header> -->
+   
+		<!-- <section class="my-slider"> -->
+			<!-- <ul> -->
+				<!-- <li> -->
+					<!-- <section class="slide_1"> -->
+						<!-- <div class="caption"> -->
+							<!-- <h2 style="text-align:center;">PATNA,CITY OF EXPERTISE!</h2> -->
+							<!-- <p>There are 4 rivers in Patna - <b>Ganga, Sone, Gandak and Punpun</b>. Some say that the name Patna comes from sanskrit word <strong>“Pattan”</strong> which means port. May be the confluence of these 4 rivers served as a port. </p> -->
+						<!-- </div> -->
+					<!-- </section> -->
+				<!-- </li> -->
+				<!-- <li> -->
+					<!-- <section class="slide_2"> -->
+						<!-- <div class="caption"> -->
+							<!-- <h2>It's Historical prides!</h2> -->
+							
+							<!-- <p>Patna, in addition, is one of the oldest ad infinitum colonized places on planet earth. As per the reports and studies, Patna was referred in Buddhist sculptures around 2500 years ago.</p> -->
+						<!-- </div> -->
+					<!-- </section> -->
+				<!-- </li> -->
+				<!-- <li> -->
+					<!-- <section class="slide_3"> -->
+						<!-- <div class="caption"> -->
+							<!-- <h2>Birth-Place of Great souls!</h2> -->
+							<!-- <p>Shri Guru Gobind Singh, the renowned 10th Guru of Sikhs birthplace was Patna. Guru Gobind Singh spent his childhood in Patna. The famous Gautam Buddha passed through Patna during the last year of his life.</p> -->
+						<!-- </div> -->
+					<!-- </section> -->
+				<!-- </li> -->
+			<!-- </ul> -->
+		<!-- </section> -->
+	<!-- </div>	 -->
+	 <header id="header" role="banner">		
+        <div class="main-nav">
+            <div class="container">
+                    
+                <div class="row top_margin">	        		
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="home.aspx">
+                            <img class="img-responsive img-fluid " src="logo.png" style="padding-top:30px;" alt="logo">
+                        </a>                    
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <div id="contentdiv">
+                            <ul id="slidediv" class="nav navbar-nav navbar-right" style="display: block;">                 
+                                <li class="scroll active"><a href="home.aspx">Home</a></li>
+                                <!--<li class="scroll"><a href="news.aspx">latest news</a></li> -->                         
+                                 <li class="scroll dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Smart City<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="photogalary.aspx">What is Smart City</a></li>
+                                        <li><a href="videogalary.aspx">Smart City Mission</a></li>
+                                        <li><a href="cmspeech.aspx">City Profile</a></li>
+                                        <li><a href="preessrelease.aspx">City Vision and Goals</a></li>
+										<li><a href="preessrelease.aspx">City Vision and Goals</a></li>
+                                        <li><a target="_blank" href="http://csd.bih.nic.in/Scripts/Decision/Decision.asp">Partners</a></li>
+                                    </ul>
+                                </li>  
+<li  class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown">PROJECTS<b class="caret"></b></a>							 <ul class="dropdown-menu">
+                            <li class="dropdown nav-item">
+                              <a class="nav-link" href="area_project.html"  style="width:230px;color:black;" data-toggle="dropdown">Area Based Development Project</a>
+                              <ul class="dropdown-menu" style="position:relative;">
+                              
+                              <li><a class="dropdown-item" href="gatisheel_project.html">Operation Gatisheel Patna: Seamless Mobility</a></li>
+                              <li><a class="dropdown-item" href="janShetra.html">Operation Jan-Kshetra: Environmental Sustainability & Public Place-making</a></li>
+                              <li><a class="dropdown-item" href="SamagraVikas.html">Operation Samagra Vikas: Inclusive Endeavor</a></li>
+                              <li><a class="dropdown-item" href="aadharBhoot.html">Operation Aadhar Bhoot: Core & Resilient Infra</a></li>
+                              <li><a class="dropdown-item" href="Visankulan.html">Operation Visankulan-Decongestions</a></li>
+                              <li><a class="dropdown-item" href="Vaishvik.html">Operation Vaishvik: Enhancement of Economic & Financial Base (Glo-Cal)</a></li>
+                            </ul> 
+                            </li>
+                               <li class="dropdown nav-item">
+                          
+                            <a class="nav-link" href=""   style="color:black;"    data-toggle="dropdown">Pan City Project</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">ICCC Data Center</a></li>
+                              <li><a class="dropdown-item" href="#">Public Wi Fi Hotspots</a></li>
+                              <li><a class="dropdown-item" href="#">ITMS</a></li>
+                              <li><a class="dropdown-item" href="#">Public Transports</a></li>
+                              <li><a class="dropdown-item" href="#">Jan Seva Kendra</a></li>
+							   <li><a class="dropdown-item" href="#">Intelligent Solid Waste Management</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </li> 								
+                         
+								 <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown">OFFICE COMMUNICATIONS
+                            <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="orders.html">Office Orders</a></li>
+                              <li><a class="dropdown-item" href="notices.html">Notices</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">TENDER
+                           <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="open_tenders.html">Tenders Open</a></li>
+                              <li><a class="dropdown-item" href="comp_tenders.html">Tenders Closed</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">MEDIA
+                           <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="gallery_new.html">Photo Gallery</a></li>
+                              <li><a class="dropdown-item" href="VideoGallery.html">Video Gallery</a></li>
+                            </ul>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link pr-2" data-toggle="dropdown">ABOUT US<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="about.html">Patna Smart City Limited</a></li>
+                              <li><a class="dropdown-item" href="board.html">Board of Directors</a></li>
+                              <li><a class="dropdown-item" href="team.html">Team PSCL</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">CONTACT US<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                              <li><a class="dropdown-item" href="rti.html">RTI</a></li>
+                              <li><a class="dropdown-item" href="form.html">Grievance Registration</a></li>
+    
+                            </ul>
+							</li>               
+                    </ul>
+                            <div id="btnright"><input type="button" id="btnright" value=""></div></div>
+                        </div>		            
+                    </div>
+                </div>
+            </div>
+        </header>
+		
+		 <section id="home">
+        <div id="main-slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class=""></li>
+                <li data-target="#main-slider" data-slide-to="1" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="2" class=""></li>
+                <li data-target="#main-slider" data-slide-to="3" class=""></li>
+                <li data-target="#main-slider" data-slide-to="4" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item"><img src="images/badal.jpg" class="img-responsive" alt=""></div>
+				<div class="item active"><img src="images/bb.jpg" class="img-responsive" alt=""></div>
+				<div class="item"><img src="images/bb.jpg" class="img-responsive" alt=""></div>
+				<div class="item"><img src="images/ba.jpg" class="img-responsive" alt=""></div>
+			
+            </div>
+        </div>
+    </section>
+	 <main  style="background-image: linear-gradient(to bottom right,ROYALBLUE,white, LIGHTSKYBLUE,white,lightblue)">
+<div class="container">
+<div class="icon">
+<a href="#"><i class='fab fa-instagram spe' style='font-size:25px;color:#e4405f;'></i><br><br></a>
+<a href="#"><i class='fab fa-facebook spe' style='font-size:25px;color:#3b5999;'></i><br><br></a>
+<a href="#"><i class='fab fa-youtube spe' style='font-size:25px;color:#cd201f;'></i><br><br></a>
+<a href="#"><i class='fab fa-twitter spe' style='font-size:25px;color:#55acee;'></i><br></a>
+<br>
+</div>
+   
+        <div class="container ">
+            <div class="row justify-content-md-center">
+                <div class="col-md-9 mt-4">
+                    <h3 style="color:#28aae1;font-family:  High Tower Text;font-weight: bold;font-size: 23px;">SMART CITY <span style="color:#21b473;">INITIATIVE</span> <span style="font-size:19px;color:#767676;font-stretch: normal;line-height: 1.24;letter-spacing: normal;font-weight: 500">Urban Development the core elements of Patna Smart Cities</span></h3><br>
+                   <div class="row">
+                       <div class="col-md-4 sectionimg animated fadeInLeft">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded ">
+                                <img src="images/digital.svg"  alt="" height="100px" width="100px">
+                                 <a href="IT.html" class="stretched-link"><p>IT Connectivity & Digitalization</p></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 sectionimg animated fadeInLeft">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded ">
+                                <img src="images/citizen.svg" alt="" height="100px" width="100px">
+                             <a href="Governance.html" class="stretched-link"><p>Good Governance and Citizen Participation</p></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 sectionimg animated fadeInLeft">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded ">
+                                <img src="images/road.svg" alt="" height="97px" width="80px"><br>
+                                <a href="road.html" class="stretched-link"> <p>Roads </p></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 sectionimg animated fadeInRight delay-1s faster">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded ">
+                                <img src="images/drain.svg" alt="" height="85px" width="85px">
+                                    <a href="RoadCumDrainage.html" class="stretched-link"> <p>Road Cum Drainage </p></a>
+                            </div>
+                        </div> 
+						<div class="col-md-4 sectionimg animated fadeInLeft  delay-1s faster">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded ">
+                                <img src="images/redevelopment.svg" alt="" height="96px" width="100px">
+                                 <a href="Social.html" class="stretched-link"><p>Area Redevelopment/Decongestion</p></a>
+                            </div>
+                        </div>
+                         <div class="col-md-4 sectionimg animated fadeInLeft delay-1s faster">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded ">
+                                <img src="images/education.svg" alt="" height="97px" width="85px"><br>
+                                <a href="Education.html" class="stretched-link"> <p>Research and Education</p></a>
+                            </div>
+                        </div> 
+                        <div class="col-md-4 sectionimg animated fadeInRight delay-1s faster">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded">
+                                <img src="images/traffic.svg" alt="" height="85px" width="85px">
+                                 <a href="transport.html" class="stretched-link"><p>Transport</p></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 sectionimg animated fadeInRight delay-1s faster">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded ">
+                                <img src="images/water.svg"  class="animated heartBeat infinite" alt="" height="85px" width="85px">
+                                     <a href="WaterRej.html" class="stretched-link"><p>Water Rejuvenation</p></a>
+                            </div>
+                        </div> 
+                       
+                        <div class="col-md-4 sectionimg animated fadeInLeft  delay-1s faster">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded ">
+                                <img src="images/outdoor.svg" alt="" height="89px" width="100px">
+                                 <a href="Outdoor.html" class="stretched-link"><p>Outdoor Illumination</p></a>
+                            </div>
+                        </div> 
+						<div class="col-md-4 sectionimg animated fadeInLeft  delay-1s faster">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded ">
+                                <img src="images/park.svg" alt="" height="103px" width="100px">
+                                <a href="Leisure.html" class="stretched-link"> <p>Leisure</p></a>
+                            </div>
+                        </div>
+						 <div class="col-md-4 sectionimg animated fadeInLeft  delay-1s faster">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded">
+                                <img src="images/food.svg" alt="" height="103px" width="100px">
+                                <a href="Food.html" class="stretched-link"> <p>Food</p></a>
+                            </div>
+                        </div> 
+                        <div class="col-md-4 sectionimg animated fadeInLeft  delay-1s faster">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded ">
+                                <img src="images/social.svg" alt="" height="96px" width="100px">
+                                 <a href="Social.html" class="stretched-link"><p>Social Campaign</p></a>
+                            </div>
+                        </div></div><center>
+						 <div class="col-md-4 sectionimg animated fadeInLeft delay-1s faster">
+                            <div class="text-center shadow-sm p-3 mb-3  bg-white rounded">
+                                <img src="images/energy.svg" alt="" height="96px" width="85px">
+                                 <a href="GreenEnergy.html" class="stretched-link"><p>Green Energy</p></a>
+                            </div>
+                        </div> </center>
+						  
+						
+                   </main>
+                </div>
+            </div>
+        </div>
+		
+    <section>
+            <div class="shadow-lg p-3 pt-4 mb-0 bg-white rounded" >
+                <h1 class="text-center" style="font-family:segoe ui;"><span style="color: #28aae1;">THE JOURNEY</span> <span style="color: #21b473;">HAS </span> <span 
+                    style="color: gray;" >BEGUN </span></h1>
+                <!--  <p class="text-center  " style="color:#FA8072; font-family:  High Tower Text; font-size: 16px;">(from “elsewhere Patna’’ to “nowhere else Patna’’)</p>--><br>
+				<h3 style="color:#FA8072; font-family:  High Tower Text;text-align:center;font-style:bold;">from “elsewhere Patna" to
+  <span class="typer" style="font-family: High Tower Text;text-align:center;font-style:bold;" id="main" data-words="&nbsp nowhere else Patna" data-delay="100" data-deleteDelay="1000" data-colors="#21b473,#28aae1,green"></span>
+  <span class="cursor" data-owner="main"></span>
+</h3><br><br>
+                <p class="container journey animated zoomIn" style="color:DARKSLATEGRAY; font-family: 'PT Serif', serif;font-size:15px;text-align:justify;">Positioned on the great Gangetic artery, Patna not only has fertile land but also enjoys the competitive advantage of being the gateway to east and north east India. Add to the USP, this city enjoys 2500 years of rich heritage. But that is it. The capital city of Bihar, Patna offers glimpse of “Real India’’ and is still struggling hard to carve niche in the “New India”.<br><br>
+
+                From pollution to Traffic congestion and garbage hills on roadside to people relieving themselves in public, paradoxes of development can be easily spotted in Patna. Add to this, the lack of opportunities which is forcing people to drain to better places on earth.<br><br>
+                        
+                Patna Smart City Limited firmly believes that this city deserves a decent, clean and sustainable environment. To restore its glory, we are aiming to improve the quality of life here to such standards that people willingly switch from ‘elsewhere Patna’ to ‘nowhere else Patna.’
+                        
+                        The journey has begun and we need you all to be our travel buddy. Will you!
+                </p>
+            </div>
+            <div  style="background-image: linear-gradient(to bottom right,ROYALBLUE,white, LIGHTSKYBLUE,white,lightblue)">
+                <div class="shadow-lg p-3   rounded">
+                    <div class="container animated bounce">
+                        <img src="images/footer.jpg" alt="" class="img-fluid ">
+                    </div>
+                </div>        
+            </div>
+            <div class=" p-3 pt-4 mb-0 bg-white " >
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center">Contact Us</h1>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 mt-2 col-sm-12 col-12 text-center" >
+					<a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115133.0101681338!2d85.07300316427651!3d25.608020764824797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C+Bihar!5e0!3m2!1sen!2sin!4v1532505725213" target="_blank">
+
+                        <img src="images/laptop.png" width="70%" height="90%" ></a>
+                    </div>
+                    <div class=" col-md-5 mt-2 col-sm-12 col-12 text-center">
+                        <h1 style="color: #1cbbb4;">GET IN TOUCH </h1><br>
+                        <P><span><i class="fa fa-map-marker" style="color: #1cbbb4;"></i></span>&nbsp; Maurya Lok Complex <br> &nbsp;&nbsp;&nbsp;&nbsp; Budha Marg, Patna- 800 001</P>
+                        <p><span><i class="fa fa-phone" style="color: #1cbbb4;"></i></span>&nbsp; 0612 - 2200634</p>
+                        <p><span><i class="fa fa-envelope" style="color: #1cbbb4;"></i></span>&nbsp; patnasmartcity.pscl@gmail.com</p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+    </section>
+    <footer style="background-image:url(images/smartcity.jpeg);height:60px;">
+        <p class="text-center pt-3" style="color: white;">&copy Smart City Patna. All Rights Reserved </p>
+    </footer>
+</div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.js"
+    integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="boot/js/bootstrap.min.js"></script>
+  <!--  <script src="js/load.js"></script>-->
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="js/index.js"></script>
+	<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    
+	
+	<script type="text/javascript" src="js_cm/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="js_cm/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js_cm/jquery-ui.js"></script>
+	<script type="text/javascript">
+	$(function() {
+	$("#btnright").click(function() {
+	$('#slidediv').toggle('slide', { direction: 'right' }, 700);
+	});
+	$("#btnleft").click(function() {
+	$('#slidediv').toggle('slide', { direction: 'left' }, 700);
+	});
+	});
+	</script>
+
+    <script src="js_cm/main_cm_website.js"></script>
+
+	</body>
+</html>

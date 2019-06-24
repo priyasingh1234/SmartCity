@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+overflow-x:hidden;
+}
+
+         img.back{
+		   
+			width:device-width;
+			height:300%;
+			}
+			
+			
+			*{
+			box-sizing:border-box;
+			}
+			
+		
+
+	/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="animate/animate.css">
+    <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Team Members of PSCL</title>
+</head>
+
+<body> 
+    <div id="rem">
+    <header style="background-color:#ffffff">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 mt-2 col-sm-12 col-12">
+                    
+                        <img src="logo.png" >
+                    
+                <!-- </div>
+                <div class="col-md-7 col-xs-11 col-11 mt-4"> -->
+               
+                </div>
+                <div class="col-md-4 col-xs-12 col-12">
+                    <div class="row">
+                        <div class="col-9 mt-4">
+                            <div class="form-group has-search">
+                                <!-- <i class="fa fa-search form-control-feedback"></i> -->
+                                <input type="text" class="form-control" placeholder="Search keyword" name="">
+                            </div>
+                       </div>
+                       <div class="col-3 mt-4"><img src="images/message.svg"> 
+                        &nbsp; <img src="images/bell.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <nav class="navbar navbar-expand-lg justify-content-end navbar-dark sticky-top" style="font-size:16px;color:white;background-color:rgb(44,62,80);font-weight:630;" >
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation" onclick="removeShow()" >
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="showButt" id="collapsibleNavbar" >
+                        <!--Custom js to remove show-->
+ 
+                        <script>
+                                let removeShow = ()=>setTimeout(async ()=>{
+                                    let el =await document.getElementById('showButt')
+                                    await el.classList.toggle('show')
+                                },300)
+                            </script>
+                    <ul class="navbar-nav" style="float:right;" >
+                        <!-- <li class="nav-item active ">
+                            <a href="#" class="nav-link ">HOME</a>
+                        </li> -->
+                        <li class="nav-item pr-2" onmouseover="addActiveClass()">
+                            <a class="nav-link active" href="index.html"  aria-haspopup="true" aria-expanded="false">HOME 
+                            </a>
+                        </li>                    
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SMART CITY
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="what.html">What is Smart City</a></li>
+                              <li><a class="dropdown-item" href="mission.html">Smart City Mission</a></li>
+                              <li><a class="dropdown-item" href="profile.html">City Profile</a></li>
+                              <li><a class="dropdown-item" href="goal.html">City Vision and Goals</a></li>
+                              <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+                            </ul>
+                        </li> 
+                        <li  class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown">PROJECTS
+                            </a>
+							 <ul class="dropdown-menu">
+                            <li class="dropdown nav-item">
+                              <a class="nav-link" href="area_project.html"  style="width:230px;color:black;" data-toggle="dropdown">Area Based Development Project</a>
+                              <ul class="dropdown-menu" style="position:relative;">
+                              
+                              <li><a class="dropdown-item" href="gatisheel_project.html">Operation Gatisheel Patna: Seamless Mobility</a></li>
+                              <li><a class="dropdown-item" href="janShetra.html">Operation Jan-Kshetra: Environmental Sustainability & Public Place-making</a></li>
+                              <li><a class="dropdown-item" href="SamagraVikas.html">Operation Samagra Vikas: Inclusive Endeavor</a></li>
+                              <li><a class="dropdown-item" href="aadharBhoot.html">Operation Aadhar Bhoot: Core & Resilient Infra</a></li>
+                              <li><a class="dropdown-item" href="Visankulan.html">Operation Visankulan-Decongestions</a></li>
+                              <li><a class="dropdown-item" href="Vaishvik.html">Operation Vaishvik: Enhancement of Economic & Financial Base (Glo-Cal)</a></li>
+                            </ul> 
+                            </li>
+                               <li class="dropdown nav-item">
+                          
+                            <a class="nav-link" href=""   style="color:black;"    data-toggle="dropdown">Pan City Project</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">ICCC Data Center</a></li>
+                              <li><a class="dropdown-item" href="#">Public Wi Fi Hotspots</a></li>
+                              <li><a class="dropdown-item" href="#">ITMS</a></li>
+                              <li><a class="dropdown-item" href="#">Public Transports</a></li>
+                              <li><a class="dropdown-item" href="#">Jan Seva Kendra</a></li>
+							   <li><a class="dropdown-item" href="#">Intelligent Solid Waste Management</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""   data-toggle="dropdown">OFFICE COMMUNICATIONS
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="orders.html">Office Orders</a></li>
+                              <li><a class="dropdown-item" href="notices.html">Notices</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">TENDER
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="open_tenders.html">Tenders Open</a></li>
+                              <li><a class="dropdown-item" href="comp_tenders.html">Tenders Closed</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown nav-item">
+                            <a class="nav-link pr-2" href=""  data-toggle="dropdown">MEDIA
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="gallery_new.html">Photo Gallery</a></li>
+                              <li><a class="dropdown-item" href="#">Video Gallery</a></li>
+                            </ul>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link pr-2" data-toggle="dropdown">ABOUT US</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="about.html">Patna Smart City Limited</a></li>
+                              <li><a class="dropdown-item" href="board.html">Board of Directors</a></li>
+                              <li><a class="dropdown-item" href="team.html">Team PSCL</a></li>
+    
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">CONTACT US</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                              <li><a class="dropdown-item" href="rti.html">RTI</a></li>
+                              <li><a class="dropdown-item" href="form.html">Grievance Registration</a></li>
+    
+                            </ul>
+                        </li>               
+                    </ul>
+                </div>
+            </nav><br>
+    </header>
+	<div>
+     <img  class="back" src="images/large.jpg"  height="100%" width="100%">
+	 </div>
+	
+	 <br>
+	 <hr>
+ 
+	 <div class="container-fluid">
+         <div class="row">
+             <div class="col-md-12">
+    <h1 style="font-family: High Tower Text;text-align:center;color:darkorange;font-weight:700;margin-top:30px;">TEAM MEMBERS OF PSCL<br></h1>
+    <center style="color:darkorange">━━━━━━━━━▲━━━━━━━━━</center> 
+      <div  style="background-image: linear-gradient(to bottom right,ROYALBLUE,white, LIGHTSKYBLUE,white,lightblue);padding: 50px;">
+<br>
+	 
+
+ <div class="container ">
+            <div class="row justify-content-md-center" >
+                <div class="col-md-10 mt-4">
+<div class="row">
+                       <div class="col-md-4 sectionimg animated fadeInLeft">
+                            <div class="text-center  p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/rl.jpg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Mr. Robert Lalchungnunga Chongthu<br><span style="padding-top:13px;color:orange;">Chairman</span></p>
+                            </div>
+                        </div>
+                       
+                        <div class="col-md-4 sectionimg animated fadeInRight delay-1s faster">
+                            <div class="text-center  p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/anusir.jpg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                    <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Mr. Anupam Kumar Suman<br><span style="padding-top:13px;color:orange;">Managing Director</span></p>
+                            </div>
+                        </div> 
+                        <div class="col-md-4 sectionimg animated fadeInRight delay-1s faster">
+                            <div class="text-center  p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/citizen.svg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                    <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Mr. Devendra Prasad Tiwary <br><span style="padding-top:13px;color:orange;">Chief Executive Officer</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 sectionimg animated fadeInRight delay-1s faster">
+                            <div class="text-center p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/citizen.svg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Mr. Sumit Jhunjhunwala	<br><span style="padding-top:13px;color:orange;">Chief Finance Officer</span></p>
+                        </div>
+                        </div>
+                        <div class="col-md-4 sectionimg animated fadeInLeft delay-1s faster">
+                            <div class="text-center  p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/citizen.svg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Miss. Shilpy Chakraborty  <br><span style="padding-top:13px;color:orange;">Company Secretary</span></p>
+                            </div>
+                        </div> 
+                        <div class="col-md-4 sectionimg animated fadeInLeft  delay-1s faster">
+                            <div class="text-center  p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/citizen.svg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Mr. Mohammad Shahid	<br><span style="padding-top:13px;color:orange;">Senior Manager (Technical)</span></p>
+                            </div>
+                        </div> 
+                        </div>
+                        <div class="row">
+						
+						 <div class="col-md-4 sectionimg animated fadeInLeft delay-1s faster">
+                            <div class="text-center  p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/citizen.svg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Mr. Aman Kumar  <br><span style="padding-top:13px;color:orange;">Senior Manager (Technical)</span></p>
+                            </div>
+                        </div> 
+                
+                       
+                        <div class="col-md-4 sectionimg animated fadeInLeft  delay-1s faster">
+                            <div class="text-center  p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/citizen.svg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Mr. Sumeet Kumar Sharma <br><span style="padding-top:13px;color:orange;">Manager (Technical)</span></p>
+                            </div>
+                        </div> 
+						
+						 <div class="col-md-4 sectionimg animated fadeInLeft delay-1s faster">
+                            <div class="text-center  p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/citizen.svg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Mr. Ravishankar Ratnesh<br><span style="padding-top:13px;color:orange;">Manager (Technical)</span></p>
+                            </div>
+                        </div> 
+						</div>
+						<div class="row">
+                        <div class="col-md-4 sectionimg animated fadeInLeft  delay-1s faster">
+                            <div class="text-center  p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/citizen.svg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Mr. Rohit Prakash<br><span style="padding-top:13px;color:orange;">Manager (Monitoring & Evaluation)</span></p>
+                            </div>
+                        </div> 
+                    
+						
+						<div class="col-md-4 sectionimg animated fadeInLeft delay-1s faster">
+                            <div class="text-center p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/citizen.svg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Mr. Rajiv Kumar<br><br><span style="padding-top:13px;color:orange;">Manager (IT)</span></p>
+                            </div>
+                        </div> 
+                        <div class="col-md-4 sectionimg animated fadeInLeft  delay-1s faster">
+                            <div class="text-center  p-4 mb-4  bg-white rounded" style="box-shadow: inset -1px -13px 72px -15px rgba(219,180,64,0.41);border-style:inset;border-color:SILVER;border-bottom-width:6px;border-right-width:5px;">
+                                <img src="images/citizen.svg" alt="" height="150px" width="120px" style="border-style:groove;">
+                                <p style="font-family:Palatino;font-weight:bold;font-size:19px;">Miss. Harshita<br> <br><span style="padding-top:13px;color:orange;">Public Relation Officer</span></p>
+                            </div>
+                        </div> 
+                    </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<footer style="background-image:url(images/smartcity.jpeg);height:100px;">
+        <p class="text-center pt-3" style="color: white;padding-top:20px;">&copy Smart City Patna. All Rights Reserved </p>
+    </footer>
+	
+
+    
+</body>
+</html>
