@@ -51,7 +51,7 @@ loading {
      color:black;
      opacity:1.0;
       }
-.dropdown>.dropdown-toggle:active {
+/* .dropdown>.dropdown-toggle:active {
     pointer-events:none;
 transform:scale(2.2,1.2);
 
@@ -60,6 +60,6 @@ transform:scale(2.2,1.2);
   border-bottom: 2px solid #ea8b01;
 background-color:black;
 color:white;
- }
+ } */
 
 
