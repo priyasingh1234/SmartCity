@@ -214,9 +214,19 @@ h1, h2, h3, h4, h5, h6 {
   padding:0 95px 0 0;
   opacity: .9
 }
-
+.scroll{
+  padding: 20px 0px 20px 0px;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-weight: 300;
+}
+/* .scroll li a{
+  display: none;
+} */
 .navbar-right li a {
-  padding: 35px 20px !important;
+  /* padding: 35px 20px; */
   font-size: 15px;
   color: #fff;
   text-transform: uppercase;
@@ -246,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .fixed-menu .navbar-right li a {
   font-size: 15px;
-  padding: 20px 25px;
+  padding: 10px 10px;
   text-shadow:inherit;
 }
 
