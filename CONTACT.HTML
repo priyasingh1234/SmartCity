@@ -113,6 +113,10 @@
   left: -16px;
 }
 
+
+
+
+
 /* The actual content */
 .content {
   padding: 20px 30px;
@@ -128,6 +132,9 @@
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
+  .timeline {
+  max-width: 100%;
+}
   /* Place the timelime to the left */
   .timeline::after {
   left: 31px;
@@ -156,6 +163,9 @@
   /* Make all right containers behave like the left ones */
   .right {
   left: 0%;
+  }
+  .left{
+    right: 0%;
   }
 }
 </style>
@@ -321,7 +331,7 @@
 	 <br>
 	 <hr>
 	<!-- <main  style="background-image: linear-gradient(-30deg, rgb(79, 172, 206) 0%, #f4f4f4 50%, #F0F8FF 100%)>-->
-	<h1 style="font-family: 'PT Serif', serif;text-align:center;color:darkorange;font-weight:bold;">CONTACT US!<br>━━━━━━━━━▲━━━━━━━━━</h1><br>
+	<h1 style="font-family: 'PT Serif', serif;text-align:center;color:darkorange;font-weight:bold;">CONTACT US!<br></h1><br>
 	<div class="maj">
 <div class="timeline">
   <div class="container left">
